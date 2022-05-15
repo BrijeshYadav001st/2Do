@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(117, 229, 229);
+}
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+}
+.App {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.inputAddItems{
+    height: 30px;
+    width: 15vw;
+    border: 2px solid white;
+    outline: none;
+    font: 1em sans-serif;
+
+}
+.addButton{
+    padding: 20px;
+    border: 10px;
+    margin-top: 20px;
+    
+}
+.addItemButton{
+    background-color: rgb(66, 156, 212);
+    margin-top: 10px;
+    height: 30px;
+    width: 60px;
+}
+.addItemButton:hover{
+    background-color: blue;
+    color: aliceblue;
+}
+.App .column {
+    width: 30%;
+}
+
+.droppable-col {
+    width: 90%;
+    background-color: rgb(223, 189, 189);
+    padding: 10px 10px 0 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    margin-bottom: 10px;
+    background-color: gray;
+    color: white;
+    border: 5px solid rgb(153, 200, 131);
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.item.dragging {
+    background-color: rgb(219, 113, 75);
+}
